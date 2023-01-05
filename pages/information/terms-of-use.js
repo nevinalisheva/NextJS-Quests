@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../../styles/terms-of-use.module.css"
 
 export default function Terms() {
   const [checked, setChecked] = useState(false);
@@ -14,7 +15,7 @@ export default function Terms() {
   }
   return (
     <div>
-      <h2>Terms of Use</h2>
+      <h2 className={styles.title}>Terms of Use</h2>
       <p>
         Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Suspendisse vitae libero pharetra, dictum velit non, mollis ante.
@@ -30,7 +31,7 @@ export default function Terms() {
           />
           <label>Accept Terms & Conditions</label>
           <br></br>
-          <button type="submit">OK</button>
+          <button type="submit" className={styles.btn}>OK</button>
         </form>
       </div>
     </div>

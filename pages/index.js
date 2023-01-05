@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { useEffect } from "react";
+import Image from "next/image";
+import styles from "../styles/Home.module.css"
 
 export default function IndexPage() {
   useEffect(() => {
@@ -7,10 +8,8 @@ export default function IndexPage() {
   }, []);
   return (
     <div>
-      <h1>Hello there !</h1>
-      <Link href="/information/about">About us</Link>
-      <br></br>
-      <Link href="/information/terms-of-use">Terms of Use</Link>
+      <h1>Hello there!</h1>
+      <Image src="/favicon.ico" height={170} width={170} alt="next" />
     </div>
   );
 }
