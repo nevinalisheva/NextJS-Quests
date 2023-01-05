@@ -4,11 +4,16 @@ const Navbar = () => {
     return (
       <header>
         <nav>
-          <div>
+          <div className="nav">
             <Link href="/">Home</Link>
             <Link href="/information/about">About us</Link>
             <Link href="/information/terms-of-use">Terms of Use</Link>
           </div>
+          <style jsx>{`
+            .nav {
+              padding-right: 50px
+            }
+          `}</style>
         </nav>
       </header>
     );
